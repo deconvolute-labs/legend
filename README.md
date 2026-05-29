@@ -1,9 +1,8 @@
 # Legend
 
 ![Python](https://img.shields.io/badge/python-3.13+-blue?style=flat-square&logo=python&logoColor=white)
+![PyPI](https://img.shields.io/badge/pypi-legend_pii-blue?style=flat-square&logo=pypi&logoColor=white)
 ![License](https://img.shields.io/badge/license-Apache%202.0-green?style=flat-square)
-![PyPI](https://img.shields.io/badge/pypi-legend-orange?style=flat-square&logo=pypi&logoColor=white)
-[![Downloads](https://static.pepy.tech/badge/legend/month)](https://pepy.tech/project/legend)
 ![Status](https://img.shields.io/badge/status-active-brightgreen?style=flat-square)
 
 **PII pseudonymization for the full agentic loop.**
