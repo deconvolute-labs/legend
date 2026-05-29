@@ -41,16 +41,16 @@ class EmailGenerator(GeneratorBase):
         self._faker = Faker()
 
     def generate(self, real_value: str, entity_type: EntityType, **kwargs: str) -> str:
-        """Generate a fake email address.
+        """Generate a fake email address using the reserved example.com domain.
 
         Args:
-            real_value: The normalized real email (unused for generation in v0).
+            real_value: Unused; present to satisfy the GeneratorBase interface.
             entity_type: Must be EntityType.EMAIL_ADDRESS.
             **kwargs: In v1, person_pseudonym= may be passed to derive the
                 local part from an existing PERSON pseudonym.
 
         Returns:
-            A fake email string using the FAKE_EMAIL_DOMAIN domain.
+            A fake email string with a random local part and FAKE_EMAIL_DOMAIN.
         """
         local = self._faker.user_name()
         return f"{local}@{FAKE_EMAIL_DOMAIN}"
