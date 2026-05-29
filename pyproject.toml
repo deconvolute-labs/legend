@@ -1,5 +1,5 @@
 [project]
-name = "legend"
+name = "legend-pii"
 dynamic = ["version"]
 description = "Reversible PII pseudonymization for the full AI agentic loop."
 readme = "README.md"
