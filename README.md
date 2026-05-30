@@ -4,12 +4,13 @@
 ![PyPI](https://img.shields.io/badge/pypi-legend_pii-blue?style=flat-square&logo=pypi&logoColor=white)
 ![License](https://img.shields.io/badge/license-Apache%202.0-green?style=flat-square)
 ![Status](https://img.shields.io/badge/status-active-brightgreen?style=flat-square)
+[![Benchmark](https://img.shields.io/badge/benchmark-pii--benchmark-blue?style=flat-square)](https://github.com/deconvolute-labs/pii-benchmark)
 
 **PII pseudonymization for the full agentic loop.**
 
 ---
 
-Agent pipelines expose PII at every step: in user prompts, tool call arguments, tool results, and final responses. Legend intercepts at all four points, replacing PII with realistic pseudonyms before it reaches external APIs or leaves your infrastructure, and restoring the original values exactly in the final response.
+Agent pipelines expose PII at every step: in user prompts, tool call arguments, tool results, and final responses. Legend [intercepts at all four points](https://deconvolutelabs.com/blog/pii-pseudonymization-agentic-systems), replacing PII with realistic pseudonyms before it reaches external APIs or leaves your infrastructure, and restoring the original values exactly in the final response.
 
 ---
 
@@ -104,6 +105,12 @@ Most tools protect only the prompt. Boundary B and Boundary C are where agent-sp
 **On-premise.** Detection runs via YARA rules and a local spaCy model. Nothing leaves your infrastructure during processing.
 
 **Framework-agnostic.** Works with LangGraph, LangChain, CrewAI, or any agent framework. `PseudonymContext` wraps your existing agent calls with no framework-specific integration required.
+
+---
+
+## Benchmark
+
+Head-to-head evaluation against [Presidio](https://microsoft.github.io/presidio) on detection F1, revert accuracy, and text coherence across eleven entity types. Results and reproduction instructions at [deconvolute-labs/pii-benchmark](https://github.com/deconvolute-labs/pii-benchmark).
 
 ---
 
